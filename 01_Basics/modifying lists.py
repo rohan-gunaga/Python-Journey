@@ -50,3 +50,32 @@ removed_mark =marks.pop(2)
 
 print("removed mark is:", removed_mark)
 print("updated marks list is:", marks )
+
+
+# list sorting:
+marks = [55, 49, 95, 64, 30]
+
+print(sorted(marks))
+
+# sum of list:
+marks = [55, 49, 95, 64, 30]
+print(sum(marks))
+
+# common methods of list:
+ # index() method:
+marks = [55, 49, 95, 64, 30]
+print(marks.index(95))
+
+# reverse of list:
+
+items = [1, 26, 42, 78 ,36 ,24, 45]
+sorted_items = sorted(items)
+rev = sorted_items.reverse()
+print(sorted_items)
+
+# nested list:
+
+m = [[1,2], [[3,4], [5,6]]]
+print(type(m))
+print(m)
+print(m[0][1])
