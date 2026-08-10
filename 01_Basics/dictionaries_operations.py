@@ -35,3 +35,24 @@ print(birthday)
 
 print(birthday.keys())
 print(birthday.values())
+
+
+# problem 1:
+
+student = {
+    "name": "Rohan",
+    "age" : 20,
+    "branch": "EEE"
+}
+
+# changing the age
+
+print(student)
+student["age"] = 21
+print(student)
+
+# add a item to a dictionary
+
+print("adding college to the list")
+student["college"] = "SIT"
+print(student)
