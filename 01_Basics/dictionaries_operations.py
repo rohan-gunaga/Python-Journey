@@ -56,3 +56,26 @@ print(student)
 print("adding college to the list")
 student["college"] = "SIT"
 print(student)
+
+
+# problem 2:
+
+item1 = {
+    "name": "Sugar",
+    "weight": 2,
+    "price": 99.9
+}
+
+item2 = {
+    "name": "Milk",
+    "weight": 1,
+    "price": 50 
+}
+
+items = [item1, item2, ]
+
+print(items)
+
+# total weight
+
+print(f"Total Weight:{item1["weight"]+item2["weight"]}Kg")
