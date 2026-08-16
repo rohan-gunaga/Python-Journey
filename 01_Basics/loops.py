@@ -37,3 +37,44 @@ while trials<3:
         break
     else:
         print("INCORRECT")
+
+
+# Basic while loop problems:
+
+  # problem 1:
+
+i = 1
+
+while i <= 10:
+    print(i)
+    i += 1
+
+# problem 2:
+
+i = 10
+
+while i >= 1:
+    print(i)
+    i = i - 1
+
+# problem 3:
+print ("START")
+i = 2
+
+while i <= 20:
+    print(i)
+    i = i + 2
+
+print("END")
+
+# problem 4:
+
+i = 1
+total = 0
+
+while i <= 10:
+    print(i)
+    total = total + i 
+    i = i + 1
+
+print(total)
