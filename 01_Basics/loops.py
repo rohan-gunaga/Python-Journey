@@ -78,3 +78,44 @@ while i <= 10:
     i = i + 1
 
 print(total)
+
+# problem 5:
+
+i = 20
+
+
+while i >= 2:
+    print(i)
+
+    i = i - 2
+
+# problem 6:
+
+i = 1
+count = 0
+
+while i <= 10:
+    print(i)
+    count = count + 1
+    i = i + 1
+
+print(count)
+
+# problem 7:
+
+i = 1
+count = 0
+
+while i <= 10:
+    if i % 2 == 0:
+        count = count + 1
+    i = i + 1
+print(count)
+
+# problem 8:
+
+i = 5 
+
+while i <= 15:
+    print(i)
+    i = i + 1
