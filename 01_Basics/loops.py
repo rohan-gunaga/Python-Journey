@@ -119,3 +119,101 @@ i = 5
 while i <= 15:
     print(i)
     i = i + 1
+
+# problem 9:
+
+i = 10
+
+while i >= 1:
+    table = 5 * i 
+    print(table)
+    i = i - 1
+
+# problem 10:
+
+i = 1
+
+while i <= 10:
+    square = i * i
+    print(square)
+    i = i + 1
+
+# problem 11:
+
+i = 2
+total = 0
+
+while i <= 10:
+    total = total + i
+    i = i + 2
+
+print(total)
+
+# problem 12:
+
+i = 3
+
+while i <= 20:
+    print(i)
+    i = i + 3
+
+# problem 13:
+
+i = 10 
+total = 0
+
+while i >= 1:
+    print(i)
+    total = total + i
+    i = i - 1
+
+print(total)
+
+
+# problem 14:
+
+i = 1
+
+while i <= 10:
+    print(i)
+
+    if i == 7:
+        break
+
+    i = i + 1
+
+
+    # problem 15:
+
+i = 1
+
+while i <= 10:
+    if i == 5:
+        i = i + 1
+        continue
+
+    print(i)
+    i = i + 1
+
+# problem 16:
+
+i = 2
+total = 0
+
+while i <= 20:
+    print(i)
+    total = total + i
+    i = i + 2
+
+print(total)
+
+# problem 17:
+
+i = 2
+count = 0
+
+while i <= 20:
+    count = count + 1
+    i = i + 2
+
+print(count)
