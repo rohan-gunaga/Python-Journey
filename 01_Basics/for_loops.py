@@ -288,3 +288,100 @@ for number in numbers:
         count = count + 1
 
 print(count)
+
+
+# problem 31:
+
+numbers = [2, 5, 9, 4, 7, 8, 3]
+
+for number in numbers:
+    if number == 7:
+        print("found 7")
+        break
+
+# problem 32:
+
+numbers = [10, 25, 34, 18, 7, 42, 15]
+
+for number in numbers:
+    print(number)
+    if number == 7:
+        break
+
+# problem 33:
+
+numbers = [4, 8, 12, 16, 20, 25, 30]
+
+for number in numbers:
+    if number > 20:
+        print("limit reached")
+        break
+    
+    print(number)
+
+# problem 34:
+
+numbers = [1, 2, 3, 4, 5, 6, 7]
+
+for number in numbers:
+    if number % 2 == 0:
+        continue
+
+    print(number)
+
+# problem 35:
+
+numbers = [10, 15, 20, 25, 30, 35, 40]
+
+for number in numbers:
+    if number % 10 == 0:
+        continue
+    print(number)
+
+# problem 36:
+
+numbers = [5, -2, 8, -7, 10, -3, 15]
+
+for number in numbers:
+    if number < 0:
+        continue
+    print(number)
+
+# problem 37:
+
+for i in range(3):
+    for j in range(3):
+        print(1, end=" ")
+    print()
+
+
+# problem 38:
+
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(j, end=" ")
+    print()
+
+# problem 39:
+
+for i in range(1, 4):
+    for j in range(1, i + 1):
+                  
+        print(j, end=" ")
+    print()
+
+# problem 40:
+
+for i in range(1, 4):
+    for j in range(i): 
+        print(i, end=" ")
+    print()
+
+# problem 41:
+number = 1
+
+for i in range(1, 4):
+    for j in range(i): 
+        print(number, end=" ")
+        number = number + 1
+    print()
