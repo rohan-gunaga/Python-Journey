@@ -385,3 +385,201 @@ for i in range(1, 4):
         print(number, end=" ")
         number = number + 1
     print()
+
+# problem 42:
+
+for i in range(1, 4):
+    for j in range(3):
+        print("*", end=" ")
+    print()
+
+# problem 43:
+
+for i in range(1, 4):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+# problem 44:
+
+for i in range(1, 4):
+    for s in range(3 - i):
+        print(" ", end="")
+
+        
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+# problem 45:
+
+for i in range(1, 4):
+    for j in range(4 - i):
+        print("*", end=" ")
+    print()
+
+# problem 46:
+
+for i in range(1, 4):
+    for s in range(3 - i):
+        print(" ", end="")
+
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+for i in range(1, 3):
+    for s in range(i):
+        print(" ", end="")
+
+    for j in range(3 - i):
+        print("*", end=" ")
+    print()
+
+# problem 47:
+print()
+for i in range(1, 4):
+    for s in range(i - 1):
+        print(" ", end="")
+
+    for j in range(4 - i):
+        print("*", end=" ")
+    print()
+
+for i in range(2, 4):
+    for s in range(3 - i):
+        print(" ", end="")
+
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+# problem 48:
+
+for i in range(1, 4):
+    # 1. Increasing loop (1 to i)
+    for j in range(1, i + 1):
+        print(j, end=" ")
+        
+    # 2. Decreasing loop (i - 1 down to 1)
+    for j in range(i - 1, 0, -1):
+        print(j, end=" ")
+        
+    print()
+
+# problem 49:
+
+numbers = [12, 5, 8, 21, 16, 7, 30]
+
+for number in numbers:
+    if number % 2 != 0:
+        continue
+    print(number)
+
+# problem 50:
+
+numbers = [10, 25, 8, 42, 15, 30, 7]
+
+for number in numbers:
+    if number <= 20:
+        continue
+    print(number)
+
+# problem 51:
+
+numbers = [5, 12, -3, 18, -7, 25, 10]
+
+for number in numbers:
+    if number < 0:
+        continue
+
+    print(number)
+
+    if number == 25:
+        break
+    
+# problem 52:
+
+numbers = [3, 8, 15, 22, 7, 30, 11, 40]
+
+for number in numbers:
+    if number % 2!= 0:
+        continue
+
+    print(number)
+
+    if number > 20:
+        break
+
+# problem 53:
+
+numbers = [12, -5, 8, 0, 15, -3, 20, 7]
+
+for number in numbers:
+    if number < 0:
+        continue
+    
+    if number == 0:
+        break
+
+    print(number)
+
+# problem 54:
+
+for i in range(1,6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+# problem 55:
+
+for i in range(1, 6):
+    for j in range(1, 7 - i):
+       print(j, end="")
+    print() 
+
+# problem 56:
+number = 1
+
+for i in range(1, 5):
+    for j in range(i):
+        print(number, end="")
+        number = number + 1
+    print()
+
+# problem 57:
+
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(i * j, end=" ")
+    print()
+
+# problem 58:
+
+for i in range(1, 6):
+    for s in range(5 - i):
+        print(" ", end="")
+
+    for j in range(i):
+        print("*", end="")
+    print()
+
+# problem 59:
+
+for i in range(1, 6):
+    for s in range(5 - i):
+        print(" ", end="")
+    for j in range(2 * i - 1 ):
+        print("*", end="")
+    print()
+
+# problem 60:
+number = 1
+
+for i in range(1, 6):
+    for s in range(5 - i):
+        print(" ", end="")
+    for j in range(1, 2 * i):
+        print(j, end="")
+        
+    print()
