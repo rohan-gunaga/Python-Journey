@@ -574,7 +574,6 @@ for i in range(1, 6):
     print()
 
 # problem 60:
-number = 1
 
 for i in range(1, 6):
     for s in range(5 - i):
@@ -583,3 +582,21 @@ for i in range(1, 6):
         print(j, end="")
         
     print()
+
+# problem 61:
+
+for i in range(5):
+    for j in range(5):
+        if i == 0 or i == 4 or j == 0 or j == 4:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+# problem 62:
+
+for i in range(1, 6):
+    for j in range(1, 11):
+        print( i, "x" , j, "=", i*j)
+    print()
+    
