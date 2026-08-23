@@ -39,3 +39,36 @@ def cricket(batsman, bowler):
     print(f"{batsman} hit a six aginst {bowler}")
 
 cricket("Virat Kohli","mitchel starc")
+
+# problem 4:
+
+def greet():
+    print("Hello, Rohan!")
+
+greet()
+
+# problem 5:
+
+def add(a, b):
+    print(a + b)
+
+add(10, 20)
+
+# problem 6:
+
+def square(number):
+    return number * number
+
+result = square(5)
+print(result)
+
+# problem 7:
+
+def check_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+print(check_even(10))
+print(check_even(7))
