@@ -1,0 +1,4 @@
+I am learning Python.
+I am practicing everyday.
+I want to become a software engineer.
+I am building real Python projects.
