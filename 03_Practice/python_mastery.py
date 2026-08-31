@@ -55,3 +55,104 @@ def find_average(numbers):
 
 print(find_average(numbers))
                               
+# problem 4:
+
+student = {
+    "name": "Rohan",
+    "marks": 85,
+    "branch": "EEE"
+}
+
+def display_student(student):
+
+   print("Name:", student["name"])
+   print("Marks:", student["marks"])
+   print("Branch:", student["branch"])
+
+display_student(student)
+
+# problem 5:
+
+student = {
+    "name": "Rohan",
+    "marks": 85
+}
+
+def calculate_grade(student):
+
+    marks = student["marks"]
+
+ 
+    if marks >= 90:
+        grade = "A"
+    elif marks >= 75:
+        grade = "B"
+    elif marks >= 60:
+        grade = "C"
+    elif marks >= 40:
+        grade = "D"
+    else:
+        grade = "F"
+
+    return grade
+
+grade = calculate_grade(student)
+
+print("Student:", student["name"])
+print("Grade:", grade)
+
+# problem 6:
+
+def square(number):
+    return number * number
+
+answer = square(5)
+print(answer)
+
+# problem 7:
+
+def check_even(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+result = check_even(17)
+print(result)
+
+# problem 8:
+
+def test():
+    return "Hello"
+
+result = test()
+print(result)
+
+# problem 9:
+
+students = [
+    {"name": "Rohan", "marks": 85},
+    {"name": "Rahul", "marks": 92},
+    {"name": "Anu", "marks": 67}
+]
+
+def get_grade(marks):
+
+        if marks >= 90:
+            grade = "A"
+        elif marks >= 75:
+            grade = "B"
+        elif marks >= 60:
+            grade = "C"
+        elif marks >= 40:
+            grade = "D"
+        else:
+            grade = "F"
+
+        return grade
+
+for student in students:
+    
+    grade = get_grade(student["marks"])
+
+    print(student["name"], "-", grade)
