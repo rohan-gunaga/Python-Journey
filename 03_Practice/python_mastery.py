@@ -156,3 +156,57 @@ for student in students:
     grade = get_grade(student["marks"])
 
     print(student["name"], "-", grade)
+
+# problem 10:
+
+def multiply_numbers(*args):
+    total = 1
+
+    for number in args:
+        total = total * number
+
+    return total
+
+result = multiply_numbers(2, 3, 4)
+print(result)
+
+# problem 11:
+
+def find_max(*args):
+
+    max_value = args[0]
+
+    for number in args:
+        if number > max_value:
+            max_value = number
+
+    return max_value
+
+result = find_max(10, 45, 23, 78, 12)
+print(result)
+
+# problem 12:
+
+def student_info(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+student_info(name="Rohan", age=20, branch="EEE")
+
+# problem 13:
+
+def student_info(**kwargs):
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+student_info(name="Rohan", age=20, branch="EEE", college="SIT", cgpa=7.88)
+
+# problem 14:
+
+def student_report(**kwargs):
+    print("===== STUDENT REPORT =====")
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
+student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
+     
