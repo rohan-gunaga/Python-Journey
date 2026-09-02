@@ -210,3 +210,66 @@ def student_report(**kwargs):
 
 student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
      
+# problem 15:
+
+name = "Rohan"
+
+def greet():
+    name = "Rahul"
+    print(name)
+
+greet()
+print(name)
+
+# problem 16:
+
+x = 10
+
+def test():
+    x = 20
+    print(x)
+
+test()
+print(x)
+
+x = 10
+
+def test():
+    global x
+    x = x + 5
+    print(x)
+
+test()
+
+# problem 17:
+
+import math
+
+number = 5
+
+result = math.ceil(number)
+
+print(result)
+
+# problem 18:
+
+import math
+
+number = 7.8
+
+result = math.floor(number)
+
+print(result)
+
+# problem 19:
+
+from calculator import add, square 
+
+number1 = int(input("enter the number1: "))
+number2 = int(input("enter the number2: "))
+
+sum = add(number1,number2)
+square_number = square(sum)
+
+print("Sum: ",sum)
+print("Square: ", square_number)
