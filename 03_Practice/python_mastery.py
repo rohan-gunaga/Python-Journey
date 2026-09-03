@@ -263,7 +263,7 @@ print(result)
 
 # problem 19:
 
-from calculator import add, square 
+from calculator import add
 
 number1 = int(input("enter the number1: "))
 number2 = int(input("enter the number2: "))
@@ -272,4 +272,76 @@ sum = add(number1,number2)
 square_number = square(sum)
 
 print("Sum: ",sum)
-print("Square: ", square_number)
+
+
+# problem 20:
+
+from calculator import add, subtract, multiply
+
+
+number1 = int(input("enter the number1: "))
+number2 = int(input("enter the number2: "))
+
+addition = add(number1,number2)
+subtraction = subtract(number1,number2)
+multiplication = multiply(number1,number2)
+
+print("Addition: ",addition)
+print("Subtraction: ",subtraction)
+print("Multiplication: ",multiplication)
+
+# problem 21:
+
+try:
+    number = int("hello")
+    result = 10 / number
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+except ValueError:
+    print("Invalid number")
+
+# problem 22:
+try:
+    number1 = int(input("Enter the number1: "))
+    number2 = int(input("Enter the number2: "))
+
+    result = number1 / number2
+
+    print(result)
+
+except ValueError:
+    print("please enter numbers only")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+finally:
+    print("program finished")
+
+# problem 23:
+
+try:
+    num = int(input("Enter the number: "))
+    print(num)
+
+except ValueError:
+    print("Invalid number")
+
+finally:
+    print("Program ended")
+
+# problem 24:
+
+file = open("data.txt", "w")
+
+file.write("\n Apple")
+file.write("\n Banana")
+
+file.close()
+
+file = open("data.txt", "w")
+file.write("Mango")
+
+file.close()
