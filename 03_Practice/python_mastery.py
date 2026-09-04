@@ -1,347 +1,387 @@
-# problem 1:
+# # problem 1:
 
-name = input("enter the name: ")
-marks = int(input("enter the marks: "))
+# name = input("enter the name: ")
+# marks = int(input("enter the marks: "))
 
-if marks >= 90:
-    print(name, "'s Grade: A")
-elif marks >= 75:
-    print(name, "'s Grade: B")
-elif marks >= 60:
-    print(name, "'s Grade: C")
-elif marks >= 40:
-    print(name, "'s Grade: D")
-else:
-    print(name, "'s Grade: F")
+# if marks >= 90:
+#     print(name, "'s Grade: A")
+# elif marks >= 75:
+#     print(name, "'s Grade: B")
+# elif marks >= 60:
+#     print(name, "'s Grade: C")
+# elif marks >= 40:
+#     print(name, "'s Grade: D")
+# else:
+#     print(name, "'s Grade: F")
 
-# problem 2:
+# # problem 2:
 
-numbers = [10, 25, 8, 42, 17, 30]
-count = 0
-sum = 0
+# numbers = [10, 25, 8, 42, 17, 30]
+# count = 0
+# sum = 0
 
-for number in numbers:
-    sum = sum + number
+# for number in numbers:
+#     sum = sum + number
 
-print(sum)
+# print(sum)
 
-for number in numbers:
-    if number % 2 == 0:
-        count = count + 1
+# for number in numbers:
+#     if number % 2 == 0:
+#         count = count + 1
 
-print(count)
+# print(count)
 
-largest = numbers [0]
+# largest = numbers [0]
 
-for number in numbers:
-    if number > largest:
-        largest = number
+# for number in numbers:
+#     if number > largest:
+#         largest = number
 
-print(largest) 
+# print(largest) 
 
-# problem 3:
+# # problem 3:
 
-numbers = [10, 20, 30, 40, 50]
+# numbers = [10, 20, 30, 40, 50]
 
-def find_average(numbers):
-    total = 0
+# def find_average(numbers):
+#     total = 0
 
-    for number in numbers:
-        total = total + number
+#     for number in numbers:
+#         total = total + number
 
-    average = total / len(numbers)
+#     average = total / len(numbers)
 
-    return average
+#     return average
 
-print(find_average(numbers))
+# print(find_average(numbers))
                               
-# problem 4:
+# # problem 4:
 
-student = {
-    "name": "Rohan",
-    "marks": 85,
-    "branch": "EEE"
-}
+# student = {
+#     "name": "Rohan",
+#     "marks": 85,
+#     "branch": "EEE"
+# }
 
-def display_student(student):
+# def display_student(student):
 
-   print("Name:", student["name"])
-   print("Marks:", student["marks"])
-   print("Branch:", student["branch"])
+#    print("Name:", student["name"])
+#    print("Marks:", student["marks"])
+#    print("Branch:", student["branch"])
 
-display_student(student)
+# display_student(student)
 
-# problem 5:
+# # problem 5:
 
-student = {
-    "name": "Rohan",
-    "marks": 85
-}
+# student = {
+#     "name": "Rohan",
+#     "marks": 85
+# }
 
-def calculate_grade(student):
+# def calculate_grade(student):
 
-    marks = student["marks"]
+#     marks = student["marks"]
 
  
-    if marks >= 90:
-        grade = "A"
-    elif marks >= 75:
-        grade = "B"
-    elif marks >= 60:
-        grade = "C"
-    elif marks >= 40:
-        grade = "D"
-    else:
-        grade = "F"
+#     if marks >= 90:
+#         grade = "A"
+#     elif marks >= 75:
+#         grade = "B"
+#     elif marks >= 60:
+#         grade = "C"
+#     elif marks >= 40:
+#         grade = "D"
+#     else:
+#         grade = "F"
 
-    return grade
+#     return grade
 
-grade = calculate_grade(student)
+# grade = calculate_grade(student)
 
-print("Student:", student["name"])
-print("Grade:", grade)
+# print("Student:", student["name"])
+# print("Grade:", grade)
 
-# problem 6:
+# # problem 6:
 
-def square(number):
-    return number * number
+# def square(number):
+#     return number * number
 
-answer = square(5)
-print(answer)
+# answer = square(5)
+# print(answer)
 
-# problem 7:
+# # problem 7:
 
-def check_even(number):
-    if number % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+# def check_even(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
 
-result = check_even(17)
-print(result)
+# result = check_even(17)
+# print(result)
 
-# problem 8:
+# # problem 8:
 
-def test():
-    return "Hello"
+# def test():
+#     return "Hello"
 
-result = test()
-print(result)
+# result = test()
+# print(result)
 
-# problem 9:
+# # problem 9:
 
-students = [
-    {"name": "Rohan", "marks": 85},
-    {"name": "Rahul", "marks": 92},
-    {"name": "Anu", "marks": 67}
-]
+# students = [
+#     {"name": "Rohan", "marks": 85},
+#     {"name": "Rahul", "marks": 92},
+#     {"name": "Anu", "marks": 67}
+# ]
 
-def get_grade(marks):
+# def get_grade(marks):
 
-        if marks >= 90:
-            grade = "A"
-        elif marks >= 75:
-            grade = "B"
-        elif marks >= 60:
-            grade = "C"
-        elif marks >= 40:
-            grade = "D"
-        else:
-            grade = "F"
+#         if marks >= 90:
+#             grade = "A"
+#         elif marks >= 75:
+#             grade = "B"
+#         elif marks >= 60:
+#             grade = "C"
+#         elif marks >= 40:
+#             grade = "D"
+#         else:
+#             grade = "F"
 
-        return grade
+#         return grade
 
-for student in students:
+# for student in students:
     
-    grade = get_grade(student["marks"])
+#     grade = get_grade(student["marks"])
 
-    print(student["name"], "-", grade)
+#     print(student["name"], "-", grade)
 
-# problem 10:
+# # problem 10:
 
-def multiply_numbers(*args):
-    total = 1
+# def multiply_numbers(*args):
+#     total = 1
 
-    for number in args:
-        total = total * number
+#     for number in args:
+#         total = total * number
 
-    return total
+#     return total
 
-result = multiply_numbers(2, 3, 4)
-print(result)
+# result = multiply_numbers(2, 3, 4)
+# print(result)
 
-# problem 11:
+# # problem 11:
 
-def find_max(*args):
+# def find_max(*args):
 
-    max_value = args[0]
+#     max_value = args[0]
 
-    for number in args:
-        if number > max_value:
-            max_value = number
+#     for number in args:
+#         if number > max_value:
+#             max_value = number
 
-    return max_value
+#     return max_value
 
-result = find_max(10, 45, 23, 78, 12)
-print(result)
+# result = find_max(10, 45, 23, 78, 12)
+# print(result)
 
-# problem 12:
+# # problem 12:
 
-def student_info(**kwargs):
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_info(name="Rohan", age=20, branch="EEE")
+# student_info(name="Rohan", age=20, branch="EEE")
 
-# problem 13:
+# # problem 13:
 
-def student_info(**kwargs):
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_info(name="Rohan", age=20, branch="EEE", college="SIT", cgpa=7.88)
+# student_info(name="Rohan", age=20, branch="EEE", college="SIT", cgpa=7.88)
 
-# problem 14:
+# # problem 14:
 
-def student_report(**kwargs):
-    print("===== STUDENT REPORT =====")
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_report(**kwargs):
+#     print("===== STUDENT REPORT =====")
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
+# student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
      
-# problem 15:
+# # problem 15:
 
-name = "Rohan"
+# name = "Rohan"
 
-def greet():
-    name = "Rahul"
-    print(name)
+# def greet():
+#     name = "Rahul"
+#     print(name)
 
-greet()
-print(name)
+# greet()
+# print(name)
 
-# problem 16:
+# # problem 16:
 
-x = 10
+# x = 10
 
-def test():
-    x = 20
-    print(x)
+# def test():
+#     x = 20
+#     print(x)
 
-test()
-print(x)
+# test()
+# print(x)
 
-x = 10
+# x = 10
 
-def test():
-    global x
-    x = x + 5
-    print(x)
+# def test():
+#     global x
+#     x = x + 5
+#     print(x)
 
-test()
+# test()
 
-# problem 17:
+# # problem 17:
 
-import math
+# import math
 
-number = 5
+# number = 5
 
-result = math.ceil(number)
+# result = math.ceil(number)
 
-print(result)
+# print(result)
 
-# problem 18:
+# # problem 18:
 
-import math
+# import math
 
-number = 7.8
+# number = 7.8
 
-result = math.floor(number)
+# result = math.floor(number)
 
-print(result)
+# print(result)
 
-# problem 19:
+# # problem 19:
 
-from calculator import add
+# from calculator import add
 
-number1 = int(input("enter the number1: "))
-number2 = int(input("enter the number2: "))
+# number1 = int(input("enter the number1: "))
+# number2 = int(input("enter the number2: "))
 
-sum = add(number1,number2)
-square_number = square(sum)
+# sum = add(number1,number2)
+# square_number = square(sum)
 
-print("Sum: ",sum)
-
-
-# problem 20:
-
-from calculator import add, subtract, multiply
+# print("Sum: ",sum)
 
 
-number1 = int(input("enter the number1: "))
-number2 = int(input("enter the number2: "))
+# # problem 20:
 
-addition = add(number1,number2)
-subtraction = subtract(number1,number2)
-multiplication = multiply(number1,number2)
+# from calculator import add, subtract, multiply
 
-print("Addition: ",addition)
-print("Subtraction: ",subtraction)
-print("Multiplication: ",multiplication)
 
-# problem 21:
+# number1 = int(input("enter the number1: "))
+# number2 = int(input("enter the number2: "))
 
-try:
-    number = int("hello")
-    result = 10 / number
+# addition = add(number1,number2)
+# subtraction = subtract(number1,number2)
+# multiplication = multiply(number1,number2)
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# print("Addition: ",addition)
+# print("Subtraction: ",subtraction)
+# print("Multiplication: ",multiplication)
 
-except ValueError:
-    print("Invalid number")
+# # problem 21:
 
-# problem 22:
-try:
-    number1 = int(input("Enter the number1: "))
-    number2 = int(input("Enter the number2: "))
+# try:
+#     number = int("hello")
+#     result = 10 / number
 
-    result = number1 / number2
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
-    print(result)
+# except ValueError:
+#     print("Invalid number")
 
-except ValueError:
-    print("please enter numbers only")
+# # problem 22:
+# try:
+#     number1 = int(input("Enter the number1: "))
+#     number2 = int(input("Enter the number2: "))
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+#     result = number1 / number2
 
-finally:
-    print("program finished")
+#     print(result)
 
-# problem 23:
+# except ValueError:
+#     print("please enter numbers only")
 
-try:
-    num = int(input("Enter the number: "))
-    print(num)
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
-except ValueError:
-    print("Invalid number")
+# finally:
+#     print("program finished")
 
-finally:
-    print("Program ended")
+# # problem 23:
+
+# try:
+#     num = int(input("Enter the number: "))
+#     print(num)
+
+# except ValueError:
+#     print("Invalid number")
+
+# finally:
+#     print("Program ended")
 
 # problem 24:
 
-file = open("data.txt", "w")
+with open("data.txt", "r") as file:
+    line1 = file.readline()
+    line2 = file.readline()
 
-file.write("\n Apple")
-file.write("\n Banana")
+    print(line1)
+    print(line2)
 
-file.close()
+# problem 25:
 
-file = open("data.txt", "w")
-file.write("Mango")
+with open("data.txt", "r") as file:
+    lines = file.readlines()
 
-file.close()
+print(lines)
+
+# problem 26:
+
+with open("data.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print(line)
+
+# problem 27:
+
+with open("data.txt", "w") as file:
+    file.write("I am learning Python")
+
+# problem 28:
+
+with open("students.txt", "w") as file:
+    file.write("Rohan")
+    file.write("\nRahul")
+    file.write("\nAnu")
+
+with open("students.txt", "r") as file:
+
+    content = file.read()
+
+    print(content)
+
+with open("students.txt", "a") as file:
+
+    file.write("\nKiran")
+
+# problem 29:
+
+with open("students.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print(line.strip())
