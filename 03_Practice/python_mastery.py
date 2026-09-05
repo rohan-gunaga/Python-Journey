@@ -332,56 +332,92 @@
 # finally:
 #     print("Program ended")
 
-# problem 24:
 
-with open("data.txt", "r") as file:
-    line1 = file.readline()
-    line2 = file.readline()
+# problem 30:
 
-    print(line1)
-    print(line2)
+import json
 
-# problem 25:
+student = {
+    "name": "Rohan",
+    "age": 20,
+    "branch": "EEE",
+    "cgpa": 7.88
+}
 
-with open("data.txt", "r") as file:
-    lines = file.readlines()
+with open("student.json", "w") as file:
 
-print(lines)
+    json.dump(student, file)
 
-# problem 26:
+# problem 31: 
 
-with open("data.txt", "r") as file:
-    lines = file.readlines()
+import json
 
-for line in lines:
-    print(line)
+with open("student.json", "r") as file:
+    data = json.load(file)
 
-# problem 27:
+print(data["name"])
+print(data["age"])
+print(data["branch"])
+print(data["cgpa"])
 
-with open("data.txt", "w") as file:
-    file.write("I am learning Python")
+# problem 32:
 
-# problem 28:
+import json
 
-with open("students.txt", "w") as file:
-    file.write("Rohan")
-    file.write("\nRahul")
-    file.write("\nAnu")
+students = [
+    {"name": "Rohan", "marks": 85},
+    {"name": "Rahul", "marks": 92},
+    {"name": "Anu", "marks": 67}
+]
 
-with open("students.txt", "r") as file:
+with open("students.json", "w") as file:
+    json.dump(students, file)
 
-    content = file.read()
+# problem 33:
+import json
 
-    print(content)
+with open("students.json", "r") as file:
+    data = json.load(file)
 
-with open("students.txt", "a") as file:
+    for student in data:
+        print(student["name"], "-", student["marks"])
 
-    file.write("\nKiran")
+# problem 34:
 
-# problem 29:
+import json
 
-with open("students.txt", "r") as file:
-    lines = file.readlines()
+with open("students.json", "r") as file:
+    students = json.load(file)
 
-for line in lines:
-    print(line.strip())
+for student in students:
+    if student["name"] == "Rahul":
+        student["marks"] = 95
+
+with open("students.json", "w") as file:
+    json.dump(students, file)
+
+# problem 35:
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Rohan", 20) 
+
+print(student1.name)
+print(student1.age)
+
+# problem 36:
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Rohan", 20)
+student2 = Student("Rahul", 21)
+
+print(student1.name, "-", student1.age)
+print(student2.name, "-", student2.age)
+
