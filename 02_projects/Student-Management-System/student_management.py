@@ -12,7 +12,6 @@ class Student:
 students = []
 
 
-
 def save_students():
     print("Saving students...")
     

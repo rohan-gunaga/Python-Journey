@@ -1,489 +1,613 @@
-# problem 1:
+# # problem 1:
 
-name = input("enter the name: ")
-marks = int(input("enter the marks: "))
+# name = input("enter the name: ")
+# marks = int(input("enter the marks: "))
 
-if marks >= 90:
-    print(name, "'s Grade: A")
-elif marks >= 75:
-    print(name, "'s Grade: B")
-elif marks >= 60:
-    print(name, "'s Grade: C")
-elif marks >= 40:
-    print(name, "'s Grade: D")
-else:
-    print(name, "'s Grade: F")
+# if marks >= 90:
+#     print(name, "'s Grade: A")
+# elif marks >= 75:
+#     print(name, "'s Grade: B")
+# elif marks >= 60:
+#     print(name, "'s Grade: C")
+# elif marks >= 40:
+#     print(name, "'s Grade: D")
+# else:
+#     print(name, "'s Grade: F")
 
-# problem 2:
+# # problem 2:
 
-numbers = [10, 25, 8, 42, 17, 30]
-count = 0
-sum = 0
+# numbers = [10, 25, 8, 42, 17, 30]
+# count = 0
+# sum = 0
 
-for number in numbers:
-    sum = sum + number
+# for number in numbers:
+#     sum = sum + number
 
-print(sum)
+# print(sum)
 
-for number in numbers:
-    if number % 2 == 0:
-        count = count + 1
+# for number in numbers:
+#     if number % 2 == 0:
+#         count = count + 1
 
-print(count)
+# print(count)
 
-largest = numbers [0]
+# largest = numbers [0]
 
-for number in numbers:
-    if number > largest:
-        largest = number
+# for number in numbers:
+#     if number > largest:
+#         largest = number
 
-print(largest) 
+# print(largest) 
 
-# problem 3:
+# # problem 3:
 
-numbers = [10, 20, 30, 40, 50]
+# numbers = [10, 20, 30, 40, 50]
 
-def find_average(numbers):
-    total = 0
+# def find_average(numbers):
+#     total = 0
 
-    for number in numbers:
-        total = total + number
+#     for number in numbers:
+#         total = total + number
 
-    average = total / len(numbers)
+#     average = total / len(numbers)
 
-    return average
+#     return average
 
-print(find_average(numbers))
+# print(find_average(numbers))
                               
-# problem 4:
+# # problem 4:
 
-student = {
-    "name": "Rohan",
-    "marks": 85,
-    "branch": "EEE"
-}
+# student = {
+#     "name": "Rohan",
+#     "marks": 85,
+#     "branch": "EEE"
+# }
 
-def display_student(student):
+# def display_student(student):
 
-   print("Name:", student["name"])
-   print("Marks:", student["marks"])
-   print("Branch:", student["branch"])
+#    print("Name:", student["name"])
+#    print("Marks:", student["marks"])
+#    print("Branch:", student["branch"])
 
-display_student(student)
+# display_student(student)
 
-# problem 5:
+# # problem 5:
 
-student = {
-    "name": "Rohan",
-    "marks": 85
-}
+# student = {
+#     "name": "Rohan",
+#     "marks": 85
+# }
 
-def calculate_grade(student):
+# def calculate_grade(student):
 
-    marks = student["marks"]
+#     marks = student["marks"]
 
  
-    if marks >= 90:
-        grade = "A"
-    elif marks >= 75:
-        grade = "B"
-    elif marks >= 60:
-        grade = "C"
-    elif marks >= 40:
-        grade = "D"
-    else:
-        grade = "F"
+#     if marks >= 90:
+#         grade = "A"
+#     elif marks >= 75:
+#         grade = "B"
+#     elif marks >= 60:
+#         grade = "C"
+#     elif marks >= 40:
+#         grade = "D"
+#     else:
+#         grade = "F"
 
-    return grade
+#     return grade
 
-grade = calculate_grade(student)
+# grade = calculate_grade(student)
 
-print("Student:", student["name"])
-print("Grade:", grade)
+# print("Student:", student["name"])
+# print("Grade:", grade)
 
-# problem 6:
+# # problem 6:
 
-def square(number):
-    return number * number
+# def square(number):
+#     return number * number
 
-answer = square(5)
-print(answer)
+# answer = square(5)
+# print(answer)
 
-# problem 7:
+# # problem 7:
 
-def check_even(number):
-    if number % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+# def check_even(number):
+#     if number % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
 
-result = check_even(17)
-print(result)
+# result = check_even(17)
+# print(result)
 
-# problem 8:
+# # problem 8:
 
-def test():
-    return "Hello"
+# def test():
+#     return "Hello"
 
-result = test()
-print(result)
+# result = test()
+# print(result)
 
-# problem 9:
+# # problem 9:
 
-students = [
-    {"name": "Rohan", "marks": 85},
-    {"name": "Rahul", "marks": 92},
-    {"name": "Anu", "marks": 67}
-]
+# students = [
+#     {"name": "Rohan", "marks": 85},
+#     {"name": "Rahul", "marks": 92},
+#     {"name": "Anu", "marks": 67}
+# ]
 
-def get_grade(marks):
+# def get_grade(marks):
 
-        if marks >= 90:
-            grade = "A"
-        elif marks >= 75:
-            grade = "B"
-        elif marks >= 60:
-            grade = "C"
-        elif marks >= 40:
-            grade = "D"
-        else:
-            grade = "F"
+#         if marks >= 90:
+#             grade = "A"
+#         elif marks >= 75:
+#             grade = "B"
+#         elif marks >= 60:
+#             grade = "C"
+#         elif marks >= 40:
+#             grade = "D"
+#         else:
+#             grade = "F"
 
-        return grade
+#         return grade
 
-for student in students:
+# for student in students:
     
-    grade = get_grade(student["marks"])
+#     grade = get_grade(student["marks"])
 
-    print(student["name"], "-", grade)
+#     print(student["name"], "-", grade)
 
-# problem 10:
+# # problem 10:
 
-def multiply_numbers(*args):
-    total = 1
+# def multiply_numbers(*args):
+#     total = 1
 
-    for number in args:
-        total = total * number
+#     for number in args:
+#         total = total * number
 
-    return total
+#     return total
 
-result = multiply_numbers(2, 3, 4)
-print(result)
+# result = multiply_numbers(2, 3, 4)
+# print(result)
 
-# problem 11:
+# # problem 11:
 
-def find_max(*args):
+# def find_max(*args):
 
-    max_value = args[0]
+#     max_value = args[0]
 
-    for number in args:
-        if number > max_value:
-            max_value = number
+#     for number in args:
+#         if number > max_value:
+#             max_value = number
 
-    return max_value
+#     return max_value
 
-result = find_max(10, 45, 23, 78, 12)
-print(result)
+# result = find_max(10, 45, 23, 78, 12)
+# print(result)
 
-# problem 12:
+# # problem 12:
 
-def student_info(**kwargs):
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_info(name="Rohan", age=20, branch="EEE")
+# student_info(name="Rohan", age=20, branch="EEE")
 
-# problem 13:
+# # problem 13:
 
-def student_info(**kwargs):
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_info(name="Rohan", age=20, branch="EEE", college="SIT", cgpa=7.88)
+# student_info(name="Rohan", age=20, branch="EEE", college="SIT", cgpa=7.88)
 
-# problem 14:
+# # problem 14:
 
-def student_report(**kwargs):
-    print("===== STUDENT REPORT =====")
-    for key, value in kwargs.items():
-        print(key, ":", value)
+# def student_report(**kwargs):
+#     print("===== STUDENT REPORT =====")
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
 
-student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
+# student_report(name="Rohan", branch="EEE", cgpa=7.88, college="SIT")
      
-# problem 15:
+# # problem 15:
 
-name = "Rohan"
+# name = "Rohan"
 
-def greet():
-    name = "Rahul"
-    print(name)
+# def greet():
+#     name = "Rahul"
+#     print(name)
 
-greet()
-print(name)
+# greet()
+# print(name)
 
-# problem 16:
+# # problem 16:
 
-x = 10
+# x = 10
 
-def test():
-    x = 20
-    print(x)
+# def test():
+#     x = 20
+#     print(x)
 
-test()
-print(x)
+# test()
+# print(x)
 
-x = 10
+# x = 10
 
-def test():
-    global x
-    x = x + 5
-    print(x)
+# def test():
+#     global x
+#     x = x + 5
+#     print(x)
 
-test()
+# test()
 
-# problem 17:
+# # problem 17:
 
-import math
+# import math
 
-number = 5
+# number = 5
 
-result = math.ceil(number)
+# result = math.ceil(number)
 
-print(result)
+# print(result)
 
-# problem 18:
+# # problem 18:
 
-import math
+# import math
 
-number = 7.8
+# number = 7.8
 
-result = math.floor(number)
+# result = math.floor(number)
 
-print(result)
+# print(result)
 
-# problem 19:
+# # problem 19:
 
-from calculator import add
+# from calculator import add
 
-number1 = int(input("enter the number1: "))
-number2 = int(input("enter the number2: "))
+# number1 = int(input("enter the number1: "))
+# number2 = int(input("enter the number2: "))
 
-sum = add(number1,number2)
-square_number = square(sum)
+# sum = add(number1,number2)
+# square_number = square(sum)
 
-print("Sum: ",sum)
+# print("Sum: ",sum)
 
 
-# problem 20:
+# # problem 20:
 
-from calculator import add, subtract, multiply
+# from calculator import add, subtract, multiply
 
 
-number1 = int(input("enter the number1: "))
-number2 = int(input("enter the number2: "))
+# number1 = int(input("enter the number1: "))
+# number2 = int(input("enter the number2: "))
 
-addition = add(number1,number2)
-subtraction = subtract(number1,number2)
-multiplication = multiply(number1,number2)
+# addition = add(number1,number2)
+# subtraction = subtract(number1,number2)
+# multiplication = multiply(number1,number2)
 
-print("Addition: ",addition)
-print("Subtraction: ",subtraction)
-print("Multiplication: ",multiplication)
+# print("Addition: ",addition)
+# print("Subtraction: ",subtraction)
+# print("Multiplication: ",multiplication)
 
-# problem 21:
+# # problem 21:
 
-try:
-    number = int("hello")
-    result = 10 / number
+# try:
+#     number = int("hello")
+#     result = 10 / number
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
-except ValueError:
-    print("Invalid number")
+# except ValueError:
+#     print("Invalid number")
 
-# problem 22:
-try:
-    number1 = int(input("Enter the number1: "))
-    number2 = int(input("Enter the number2: "))
+# # problem 22:
+# try:
+#     number1 = int(input("Enter the number1: "))
+#     number2 = int(input("Enter the number2: "))
 
-    result = number1 / number2
+#     result = number1 / number2
 
-    print(result)
+#     print(result)
 
-except ValueError:
-    print("please enter numbers only")
+# except ValueError:
+#     print("please enter numbers only")
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
-finally:
-    print("program finished")
+# finally:
+#     print("program finished")
 
-# problem 23:
+# # problem 23:
 
-try:
-    num = int(input("Enter the number: "))
-    print(num)
+# try:
+#     num = int(input("Enter the number: "))
+#     print(num)
 
-except ValueError:
-    print("Invalid number")
+# except ValueError:
+#     print("Invalid number")
 
-finally:
-    print("Program ended")
+# finally:
+#     print("Program ended")
 
 
-# problem 30:
+# # problem 30:
 
-import json
+# import json
 
-student = {
-    "name": "Rohan",
-    "age": 20,
-    "branch": "EEE",
-    "cgpa": 7.88
-}
+# student = {
+#     "name": "Rohan",
+#     "age": 20,
+#     "branch": "EEE",
+#     "cgpa": 7.88
+# }
 
-with open("student.json", "w") as file:
+# with open("student.json", "w") as file:
 
-    json.dump(student, file)
+#     json.dump(student, file)
 
-# problem 31: 
+# # problem 31: 
 
-import json
+# import json
 
-with open("student.json", "r") as file:
-    data = json.load(file)
+# with open("student.json", "r") as file:
+#     data = json.load(file)
 
-print(data["name"])
-print(data["age"])
-print(data["branch"])
-print(data["cgpa"])
+# print(data["name"])
+# print(data["age"])
+# print(data["branch"])
+# print(data["cgpa"])
 
-# problem 32:
+# # problem 32:
 
-import json
+# import json
 
-students = [
-    {"name": "Rohan", "marks": 85},
-    {"name": "Rahul", "marks": 92},
-    {"name": "Anu", "marks": 67}
-]
+# students = [
+#     {"name": "Rohan", "marks": 85},
+#     {"name": "Rahul", "marks": 92},
+#     {"name": "Anu", "marks": 67}
+# ]
 
-with open("students.json", "w") as file:
-    json.dump(students, file)
+# with open("students.json", "w") as file:
+#     json.dump(students, file)
 
-# problem 33:
-import json
+# # problem 33:
+# import json
 
-with open("students.json", "r") as file:
-    data = json.load(file)
+# with open("students.json", "r") as file:
+#     data = json.load(file)
 
-    for student in data:
-        print(student["name"], "-", student["marks"])
+#     for student in data:
+#         print(student["name"], "-", student["marks"])
 
-# problem 34:
+# # problem 34:
 
-import json
+# import json
 
-with open("students.json", "r") as file:
-    students = json.load(file)
+# with open("students.json", "r") as file:
+#     students = json.load(file)
 
-for student in students:
-    if student["name"] == "Rahul":
-        student["marks"] = 95
+# for student in students:
+#     if student["name"] == "Rahul":
+#         student["marks"] = 95
 
-with open("students.json", "w") as file:
-    json.dump(students, file)
+# with open("students.json", "w") as file:
+#     json.dump(students, file)
 
-# problem 35:
+# # problem 35:
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-student1 = Student("Rohan", 20) 
+# student1 = Student("Rohan", 20) 
 
-print(student1.name)
-print(student1.age)
+# print(student1.name)
+# print(student1.age)
 
-# problem 36:
+# # problem 36:
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-student1 = Student("Rohan", 20)
-student2 = Student("Rahul", 21)
+# student1 = Student("Rohan", 20)
+# student2 = Student("Rahul", 21)
 
-print(student1.name, "-", student1.age)
-print(student2.name, "-", student2.age)
+# print(student1.name, "-", student1.age)
+# print(student2.name, "-", student2.age)
 
-# problem 37:
+# # problem 37:
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def display(self):
-        print("Name: ", self.name)
-        print("Age: ", self.age)
+#     def display(self):
+#         print("Name: ", self.name)
+#         print("Age: ", self.age)
 
-student1 = Student("Rohan", 20)
+# student1 = Student("Rohan", 20)
 
-student1.display()
+# student1.display()
 
-# problem 38:
+# # problem 38:
 
-class Student:
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
 
-    def check_result(self):
-        if self.marks >= 40:
-            print(f"{self.name} - pass")
-        else:
-            print(f"{self.name} - fail")
+#     def check_result(self):
+#         if self.marks >= 40:
+#             print(f"{self.name} - pass")
+#         else:
+#             print(f"{self.name} - fail")
 
-student1 = Student("Rohan", 85)
-student2 = Student("Rahul", 35)
+# student1 = Student("Rohan", 85)
+# student2 = Student("Rahul", 35)
 
-student1.check_result()
-student2.check_result()
+# student1.check_result()
+# student2.check_result()
 
-# problem 39:
+# # problem 39:
 
-class Student:
-    def __init__(self, name, marks):
-        self.name = name 
-        self.marks = marks
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name 
+#         self.marks = marks
 
 
-    def get_grade(self):
-        if self.marks >= 90:
-            grade = "A"
-        elif self.marks >= 75:
-            grade = "B"
-        elif self.marks >= 60:
-            grade = "C"
-        elif self.marks >= 40:
-            grade = "D"
-        else:
-            grade = "F"
+#     def get_grade(self):
+#         if self.marks >= 90:
+#             grade = "A"
+#         elif self.marks >= 75:
+#             grade = "B"
+#         elif self.marks >= 60:
+#             grade = "C"
+#         elif self.marks >= 40:
+#             grade = "D"
+#         else:
+#             grade = "F"
 
-        return grade
+#         return grade
     
 
-student1 = Student("Rohan", 85)
-student2 = Student("Rahul", 92)
-student3 = Student("Anu", 67)
+# student1 = Student("Rohan", 85)
+# student2 = Student("Rahul", 92)
+# student3 = Student("Anu", 67)
 
-students = [student1, student2, student3]
+# students = [student1, student2, student3]
 
-for student in students:
-    grade = student.get_grade()
-    print(student.name, "-", grade)
+# for student in students:
+#     grade = student.get_grade()
+#     print(student.name, "-", grade)
+
+# problem 40:
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance")
+        else:
+            self.balance -= amount
+
+    def show_balance(self):
+        print(f"{self.balance}")
+
+
+         
+owner1 = BankAccount("Rohan", 1000)
+
+owner1.deposit(500)
+owner1.withdraw(300)
+
+owner1.show_balance()
+
+# problem 41:
+
+class Student:
+    college = "SIT"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Rohan", 20)
+student2 = Student("Rahul", 21)  
+
+print(student1.name, "-", student1.age, "-", student1.college)
+print(student2.name, "-", student2.age, "-", student2.college)
+
+# problem 42:
+
+class Student:
+    college = "SIT"
+
+student1 = Student()
+student2 = Student()
+
+Student.college = "IIT"
+
+print(student1.college)
+print(student2.college)
+
+# problem 43:
+
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+    pass
+
+
+dog1 = Dog()
+dog1.eat()
+
+# problem 44:
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    pass
+
+dog1 = Dog()
+dog1.speak()
+
+# problem 45:
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Cat(Animal):
+    def speak(self):
+        print("Cat says meow")
+
+cat1 = Cat()
+cat1.speak()
+
+# problem 46:
+
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+class Dog(Animal):
+    def eat(self):
+        super().eat()   
+        print("Dog is eating too")
+
+dog1 = Dog()
+dog1.eat()
+
+# problem 47:
+
+class Dog:
+    def speak(self):
+        print("Dog barks")
+
+class Cat:
+    def speak(self):
+        print("Cat says meow")
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.speak()
