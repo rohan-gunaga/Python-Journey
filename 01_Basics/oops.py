@@ -60,7 +60,7 @@ class Employee:
         self.salary = self.salary + amount
 
     def display(self):
-        print(f"Name:{self.name}")
+        print(f"name:{self.name}")
         print(f"Salary:{self.salary}")
 
 employee1 = Employee("Rohan", 30000)
