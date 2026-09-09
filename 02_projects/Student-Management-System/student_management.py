@@ -1,4 +1,8 @@
 import json
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+FILE_PATH = BASE_DIR / "students.json"
 
 class Student:
 
@@ -7,6 +11,32 @@ class Student:
         self.age = age
         self.branch = branch
         self.marks = marks
+
+    def get_grade(self):
+        if self.marks >= 90:
+            return "A"
+        elif self.marks >= 75:
+            return "B"
+        elif self.marks >= 60:
+            return "C"
+        elif self.marks >= 40:
+            return "D"
+        else:
+            return "F"
+        
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "age": self.age,
+            "branch": self.branch,
+            "marks": self.marks
+    }
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Branch:", self.branch)
+        print("Marks:",self.marks)
 
 
 students = []
@@ -18,19 +48,14 @@ def save_students():
     data = []
 
     for student in students:
-        data.append({
-            "name": student.name,
-            "age": student.age,
-            "branch": student.branch,
-            "marks": student.marks
-        })
+        data.append(student.to_dict())
 
-    with open("students.json", "w") as file:
+    with open(FILE_PATH, "w") as file:
         json.dump(data, file, indent=4)
 
 def load_students():
     try:
-        with open("students.json", "r") as file:
+        with open(FILE_PATH, "r") as file:
             data = json.load(file)
 
             for item in data:
@@ -43,11 +68,13 @@ def load_students():
 
                 students.append(student)
 
-    except FileNotFoundError:
-        pass
+            print("NUMBER OF STUDENTS:", len(students))
 
+    except FileNotFoundError:
+        print("students.json file not found!")
 
 load_students()
+    
 
 while True:
     print("==== STUDENT MANAGEMENT SYSTEM ====")
@@ -89,11 +116,7 @@ while True:
 
         else:
             for student in students:
-            
-                print("Name:",student.name)
-                print("Age:",student.age)
-                print("Branch:",student.branch)
-                print("Marks:",student.marks)
+                student.display()
                 print()
 
     elif choice == "3":
@@ -132,22 +155,12 @@ while True:
             if search_name == student.name:
 
 
-                if student.marks >= 90:
-                    grade = "A"
+                grade = student.get_grade()
 
-                elif student.marks >= 75:
-                    grade = "B"
-                elif student.marks >= 60:
-                    grade = "C"
-                elif student.marks >= 40:
-                    grade = "D"
-                else:
-                    grade = "F"
-            
                 print("Student:", student.name)
                 print("Marks:", student.marks)
                 print("Grade:", grade)
-
+        
                 found = True
 
         if found == False:
