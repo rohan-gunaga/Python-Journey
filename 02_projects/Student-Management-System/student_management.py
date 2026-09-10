@@ -68,8 +68,6 @@ def load_students():
 
                 students.append(student)
 
-            print("NUMBER OF STUDENTS:", len(students))
-
     except FileNotFoundError:
         print("students.json file not found!")
 
@@ -83,9 +81,12 @@ while True:
     print("2. View Students")
     print("3. Search Student")
     print("4. Calculate Grade")
-    print("5. Exit")
+    print("5. Update Student")
+    print("6. Delete Student")
+    print("7. Exit")
 
-    choice = input("Enter your choice: ")
+    choice = input("Enter your choice: ").strip()
+
 
     if choice == "1":
 
@@ -131,11 +132,7 @@ while True:
 
             if search_name == student.name:
                 print("Student found!")
-                print("Name:", student.name)
-                print("Age:", student.age)
-                print("Branch:", student.branch)
-                print("Marks:", student.marks)
-
+                student.display()
                 found = True
 
         if found == False:
@@ -167,10 +164,61 @@ while True:
             print("Student not found!")
 
     elif choice == "5":
+
+        print("Update Student selected")
+
+        search_name = input("Enter student name to update: ")
+
+        found = False
+
+        for student in students:
+
+            if search_name == student.name:
+                found = True
+
+                new_age = int(input("Enter new age: "))
+                new_branch = input("Enter new branch: ")
+                new_marks = int(input("Enter new marks: "))
+
+                student.age = new_age
+                student.branch = new_branch
+                student.marks = new_marks
+
+                save_students()
+
+                print("Student updated successfully!")
+
+        if found == False:
+            print("Student not found!")
+
+
+    elif choice == "6":
+
+        print("Delete Student selected")
+
+        search_name = input("Enter student name to delete: ")
+
+        found = False
+
+        for student in students:
+
+            if search_name == student.name:
+                found = True
+
+                students.remove(student)
+                save_students()
+
+                print("Student deleted successfully!")
+
+        if found == False:
+            print("Student not found!")
+
+
+    elif choice == "7":
         print("Exiting...")
         break
 
-    else:
+    else:     
       print("Invalid choice")
 
 
